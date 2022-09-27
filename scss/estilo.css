@@ -202,13 +202,6 @@ main .productos {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
-@media (max-width: 480px) {
-  main .galeria,
-main .productos {
-    padding: 10px;
-    margin: 10px;
-  }
-}
 @media (max-width: 380px) {
   main .galeria,
 main .productos {

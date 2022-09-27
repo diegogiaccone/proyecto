@@ -61,11 +61,6 @@ main {
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         }
 
-        @media (max-width: 480px) {
-            padding: 10px;
-            margin: 10px;
-        }
-
         @media (max-width: 380px) {
             display: flex;
             justify-content: center;
@@ -197,7 +192,7 @@ main {
                 margin: 40px 30px 40px 30px;
                 max-height: fit-content;
             }
-            
+
             .controles {
                 width: 100%;
                 background: $color-secundario;
