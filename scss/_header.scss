@@ -1,0 +1,133 @@
+header {
+    .contenedor {
+        display: flex;
+
+        @media (max-width: 720px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 480px) {
+            justify-content: center;
+        }
+
+        .logo {
+            background-color: #ffffff;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+
+            @media (max-width: 720px) {
+                width: 80px;
+                height: 80px;
+            }
+
+            @media (max-width: 480px) {
+                width: 80px;
+                height: 80px;
+            }
+
+            @media (max-width: 380px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Pacifico', cursive;
+            justify-content: center;
+            font-size: 70px;
+            margin: 0;
+            padding: 0;
+
+            @media (max-width: 720px) {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            @media (max-width: 380px) {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    .nav {
+        .nav_conteiner {
+
+            .nav_label {
+                display: flex;
+
+                @media (max-width: 480px) {
+                    font-size: 30px;
+                    color: white;
+                    justify-content: center;
+                }
+            }
+
+            .nav_input {
+                display: none;
+
+                @media (max-width: 480px) {
+
+                    &:checked+.nav_menu {
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding: 15px;
+                        align-items: center;
+                        background: rgba(0, 0, 0, .5);
+                        top: 0;
+                        left: 0;
+                        margin: 0;
+                        z-index: 1000;
+                    }
+                }
+            }
+
+            .nav_menu {
+                list-style-type: none;
+                margin: 10px;
+                text-align: center;
+
+                @media (max-width: 720px) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: 480px) {
+                    position: fixed;
+                    top: 80px;
+                    bottom: 0;
+                    width: 100%;
+                    left: 0;
+                    display: none;
+                    transition: 1s ease-in-out;
+                }
+
+                li {
+                    display: inline-block;
+                    margin: 10px;
+                    background-color: red;
+                    padding: 10px;
+                    border-radius: 20%;
+                    border-style: solid;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            color: yellow;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

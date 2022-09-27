@@ -1,0 +1,25 @@
+footer {
+    padding: 1em 0;
+    text-align: end;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    @media (max-width: 720px) {
+        background-color: $color-principal;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 480px) {
+        background-color: $color-principal;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 380px) {
+        background-color: $color-principal;             
+    }
+}
