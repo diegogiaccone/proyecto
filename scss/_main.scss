@@ -3,7 +3,7 @@ main {
         color: white;
         font-family: 'Pacifico', cursive;
         font-size: 50px;
-        font-weight: 400px;
+        font-weight: ($ancho)-20;
         padding: 20px, 0;
         text-align: center;
 
@@ -47,14 +47,18 @@ main {
         display: block;
     }
 
-    .galeria,
-    .productos {
+    @mixin imagenes {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         width: 95%;
         margin: auto;
         grid-gap: 10px;
-        padding: 40px 0;
+        padding: 40px 0;        
+    }
+
+    .galeria,
+    .productos {
+        @include imagenes;
 
         @media (max-width: 720px) {
             width: 70%;
@@ -170,9 +174,9 @@ main {
 
     .forma {
         .formulario {
-            width: 400px;
+            width: ($ancho)-20;
             background: $color-secundario;
-            padding: 30px;
+            padding: $ancho/14;
             margin: auto;
             border-radius: 4px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
