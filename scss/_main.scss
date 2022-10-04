@@ -219,13 +219,7 @@ main {
             }
 
             .textarea {
-                width: 100%;
-                background: $color-principal;
-                border: none;
-                padding: 12px;
-                color: white;
-                margin: 16px 0;
-                font-size: 16px;
+                @extend .boton;
             }
         }
     }
