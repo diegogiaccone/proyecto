@@ -383,6 +383,9 @@ main .texto {
     width: 90%;
   }
 }
+main .texto .parrafo {
+  font-family: cursive;
+}
 
 footer {
   padding: 1em 0;
